@@ -1,37 +1,29 @@
 # Dissertation
-Dissertation
 
 Files:
 ---------------------------------------------------------------------------
-defines.py   - Global variables defined and python packages required\
-               for the project\
+defines.py   - Global variables defined and python packages required for the project\
 utils.py     - All Function definitions for the project\
 cnn_train.py - File to train the CNN Models\
 vae_train.py - File to train the VAE Models\
-cnn_val.py   - Validates the CNN models, the regular one and Distance\
-               based Loss one\
-vae_val.py   - Validates the VAE based confidence score, and compares\
-               with CNNs and Ensemble model with Distance based Loss &\
-	       Softmax score\
+cnn_val.py   - Validates the CNN models, the regular one and Distance based Loss one\
+vae_val.py   - Validates the VAE based confidence score, and compares with CNNs and Ensemble model with Distance based Loss & Softmax score\
 
 Folders:
 ---------------------------------------------------------------------------
-RESULTS - Contains all the model parameter files and CNN training\
-          results text files\
+RESULTS - Contains all the model parameter files and CNN training results text files\
 DATA    - kmnist data set files\
 Figures - Figures used by the project document\
 
 Commands: 
 ---------------------------------------------------------------------------
-Note: -Before running any file, the desired data set variable(DATA_SET)\
-       should be set in the defines.py.\
-      -The kmnist data has to be downloaded before you start any runs\
-       for this dataset\
+Note:\
+-Before running any file, the desired data set variable(DATA_SET) should be set in the defines.py.\
+-The kmnist data has to be downloaded before you start any runs for this dataset\
 \
 Download Kmnit dataset : python download_data.py\
 Train CNN              : python cnn_train.py\
-Train VAE              : python vae_train.py (run twice by setting VAE_SEED to 0 and\
-                         then 1 in defines.py)\
+Train VAE              : python vae_train.py (run twice by setting VAE_SEED to 0 and then 1 in defines.py)\
 Validate CNN           : python cnn_val.py (dumps the Figures to ./Figures directory)\
 Validate VAE           : python vae_val.py (dumps the Figures to ./Figures directory)\
 
