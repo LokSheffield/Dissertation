@@ -14,6 +14,8 @@ Folders:
 RESULTS - Contains all the model parameter files and CNN training results text files\
 DATA    - kmnist data set files\
 Figures - Figures used by the project document\
+\
+Note: These folders will be created after running the python files\
 
 Commands: 
 ---------------------------------------------------------------------------
